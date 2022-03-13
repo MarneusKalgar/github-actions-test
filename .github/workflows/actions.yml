@@ -5,7 +5,7 @@ jobs:
     runs-on: ububtu-latest
     steps:
       - name: js action
-      id: greet
+        id: greet
         uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: john
