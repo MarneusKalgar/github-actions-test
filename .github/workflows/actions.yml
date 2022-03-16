@@ -38,14 +38,14 @@ jobs:
           # git clone git@github:$GITHUB_REPOSITORY
           # git checkout $GITHUB_SHA
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       - name: List files after checkout
         run: |
           pwd
           ls -a
       - name: js action
         id: greet
-        uses: actions/hello-world-javascript-action@v1
+        uses: actions/hello-world-javascript-action@vmain
         with:
           who-to-greet: john
       - name: Log Greeting Time
